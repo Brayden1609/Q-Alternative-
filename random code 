@@ -1,114 +1,104 @@
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>N0VA Web Dev</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');* {
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Orbitron', sans-serif;
 }
 
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #00ff88;
   background: url('https://media.giphy.com/media/3nBDc0nCyABa0dMI3v/giphy.gif') no-repeat center center fixed;
   background-size: cover;
-  color: #fff;
-  text-shadow: 1px 1px 2px #000;
+  backdrop-filter: brightness(0.25);
+  min-height: 100vh;
+  padding: 2rem;
 }
 
+/* Header */
 header {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 2rem;
   text-align: center;
-  border-bottom: 2px solid #0f0;
+  margin-bottom: 3rem;
 }
 
-h1 {
+h1.glow {
   font-size: 3rem;
-  color: red;
-  text-shadow: 0 0 10px green;
-}
-
-.slogan {
-  color: #0f0;
-  margin-top: 0.5rem;
-  font-style: italic;
-}
-
-section {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 2rem;
-  margin: 1rem auto;
-  max-width: 900px;
-  border-left: 4px solid #0f0;
-  border-radius: 10px;
-}
-
-h2 {
-  color: #0f0;
+  color: #00ff88;
+  text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88, 0 0 20px #00ff88;
   margin-bottom: 1rem;
-  text-transform: uppercase;
 }
 
-ul, table {
-  list-style: none;
-  width: 100%;
-  padding: 0;
+.server-code {
+  font-size: 1.2rem;
 }
 
-li, td, th {
-  margin-bottom: 0.5rem;
-}
-
-.join-btn {
-  background: red;
-  color: white;
-  padding: 1rem 2rem;
-  text-decoration: none;
+.code-highlight {
   font-weight: bold;
-  border: 2px solid green;
-  display: inline-block;
-  margin-top: 1rem;
+  color: red;
+}
+
+/* Section */
+.section {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #00ff88;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  backdrop-filter: blur(3px);
+}
+
+/* Team List */
+.team-list li {
+  padding: 0.5rem 0;
+}
+
+.hover-glow:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88;
   transition: 0.3s;
 }
 
-.join-btn:hover {
-  background: green;
-  color: black;
+/* Discord Button */
+.discord-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #00ff88;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
 }
 
+.discord-btn:hover {
+  background: #00cc66;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-top: 2px solid #0f0;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
-  </style>
-</head>
-<body>
-  <header>
-    <h1>N0VA Web Dev</h1>
-    <p class="slogan">Designing the Future. One Pixel at a Time.</p>
-  </header>  <section>
-    <h2>About Us</h2>
-    <p>We specialize in custom website design for gaming communities, creators, and brands. From landing pages to full-stack builds, N0VA delivers style and performance.</p>
-  </section>  <section>
-    <h2>Recent Projects</h2>
-    <ul>
-      <li><a href="#" style="color:#0f0;text-decoration:none;">Florida State Roleplay</a> – Drift GIF site with custom animation</li>
-      <li><a href="#" style="color:#0f0;text-decoration:none;">Georgia State RP</a> – Department layout with discord integration</li>
-    </ul>
-  </section>  <section>
-    <h2>Get in Touch</h2>
-    <p>Need a custom site? Reach out via Discord or our site to get a quote and plan your build!</p>
-    <a class="join-btn" href="https://discord.gg/yourlink" target="_blank">Join Our Discord</a>
-  </section>  <footer>
-    &copy; 2025 N0VA Web Dev — All rights reserved
-  </footer>
-</body>
-</html>
+/* Project Links */
+.project-links a {
+  color: #00ff88;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0.3rem 0;
+}
+
+.project-links a:hover {
+  text-shadow: 0 0 5px #00ff88, 0 0 15px #00ff88;
+  transition: 0.3s;
+}
